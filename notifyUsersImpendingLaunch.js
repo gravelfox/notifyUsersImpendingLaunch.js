@@ -23,7 +23,7 @@ function getLaunchDateFromMonth(month) {
 
 
 
-function findNextLE(){
+async function findNextLE(){
     // find soonest launch event (that isn't in the past) from array of launch events and return that object
     const params = {
         TableName: "launchEvents",
