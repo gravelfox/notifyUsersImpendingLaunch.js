@@ -2,9 +2,9 @@
 //each user has a customizable launch date and time which they can configure as early as
 //the first Tuesday of the month at 12:00am, or as late as the following Monday night at
 //11:45pm. 
-
+import aws from "aws-sdk";
 import * as dynamoDbLib from "./libs/dynamodb-lib";
-// import { findNextLE, getLaunchDateFromMonth } from "./libs/utils";
+// import { findNextLE, getLaunchDateFromMonth } from "./libs/utils"; //included below for sample
 var ses = new aws.SES({
    region: 'us-west-2'
 });
